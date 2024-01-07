@@ -1,13 +1,38 @@
-class Main{
-public static  void main(String args[])
+//passing class Array to a method as parameter
+import java.util.Scanner;
+class ArraysToMethod 
 {
-//create array
-int[] age={12,4,5,2,5};
-//access each element via idex
-System.out.println("Accessing elemnets in array:");
-System.out.println("First element:"+age[0]);
-System.out.println("2nd element:"+age[1]);
-System.out.println("3rd element:"+age[2]);
-System.out.println("4th element:"+age[3]);
-System.out.println("5th element:"+age[4]);
-}}
+public int max(int array[])
+{
+int max=0;
+for(int i=0;i<array.length;i++){
+of(array[i]>max){
+max=array[i];
+}}//for
+return max;
+}//max
+public int min(int array[])
+{
+int min=array[0];
+for(int i=0;i<array.length;i++)
+{
+if(array[i]<min){
+min=array[i];
+}//for
+return min;
+}//min()
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter size of array that is to created:");
+int size=sc.nextInt();
+int myArray[]=new int[size];
+System.out.println("enter elements of array:");
+for(int i=0;i<size;i++)
+{
+myArray[i]=sc.nextInt();
+}
+ArrayToMethod m=new ArrayToMethod();
+System.out.println("max value in array is:"+m.max(myArray));
+System.out.println("min value in array is:"+m.min(myArray));
+
