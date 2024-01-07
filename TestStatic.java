@@ -11,10 +11,10 @@ name=n;
 void display(){
 System.out.println(rollno+" "+name+" "+college);
 }}
-public  class Test{
+public  class TestStatic{
 public static void main(String[] args){
 Student s1=new Student(555,"ppp");
-Student s1=new Student(598,"sss");
+Student s2=new Student(598,"sss");
 Student.college="Reddy";
 s1.display();
 s2.display();
