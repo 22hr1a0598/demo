@@ -1,14 +1,17 @@
 //passing class Array to a method as parameter
 import java.util.Scanner;
-class ArraysToMethod 
+class ArrayToMethod 
 {
 public int max(int array[])
 {
 int max=0;
-for(int i=0;i<array.length;i++){
-of(array[i]>max){
+for(int i=0;i<array.length;i++)
+{
+if(array[i]>max)
+{
 max=array[i];
-}}//for
+}
+}//for
 return max;
 }//max
 public int min(int array[])
@@ -16,8 +19,10 @@ public int min(int array[])
 int min=array[0];
 for(int i=0;i<array.length;i++)
 {
-if(array[i]<min){
+if(array[i]<min)
+{
 min=array[i];
+}
 }//for
 return min;
 }//min()
@@ -35,4 +40,6 @@ myArray[i]=sc.nextInt();
 ArrayToMethod m=new ArrayToMethod();
 System.out.println("max value in array is:"+m.max(myArray));
 System.out.println("min value in array is:"+m.min(myArray));
+}
+}
 
